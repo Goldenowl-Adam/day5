@@ -7,7 +7,12 @@ function App() {
 
     return (
         <div className="container-search-box">
-            <div className={'search-box ' + (isOpenInput ? 'input-width' : '')}>
+            <div
+                className={
+                    'search-box ' +
+                    (isOpenInput ? 'search-box--show-input' : '')
+                }
+            >
                 <input className="search-box__input" type="text" />
                 <button
                     className="search-box__btn"
